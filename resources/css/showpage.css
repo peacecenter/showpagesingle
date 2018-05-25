@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+    font-family: Avenir-Book;
+    src: url('https://privateevents.peacecenter.org/articlemedia/fonts/Avenir-Book.ttf');
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url('https://privateevents.peacecenter.org/articlemedia/fonts/Gotham-Book.otf');
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url('https://privateevents.peacecenter.org/articlemedia/fonts/Gotham-Medium.otf');
+}
+
+@font-face {
+    font-family: Johnston;
+    src: url('../P22JohnstonUnderground.ttf');
+}
+
+/* CSS Document */
+
+body, html {
+	font-size: 16px;
+	font-family: "Avenir-Book", "Avenir", Helvetica, Arial, sans-serif;
+	color: #4c4c4c;
+	background-color: #f5f5f5;
+}
+
+header,footer {
+	height: 150px;
+	width: 100vw;
+	background-color: #3f4c56;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Johnston", "Gotham-Book", "Gotham", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h1.sub {
+	font-size: 1.5rem;
+	font-family: "Johnston", "Gotham", Helvetica, Arial, sans-serif;
+}
+
+h4 {
+	color: #4b769a;
+	font-size: 1.5rem;
+	margin: 25px 0 5px;
+}
+
+h4:first-of-type {
+	margin: 0 0 5px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+em, .publication {
+	font-style: italic;
+}
+
+b {
+	font-weight: bold;
+}
+
+a, a:hover {
+	color: #4b768a;
+	text-decoration: none;
+}
+
+.date {
+	font-family: "Johnston", "Avenir", Helvetica, Arial, sans-serif;
+	color: #4b768a;
+	display: block;
+	margin: 15px 0;
+}
+
+a.buttonnav {
+	font-family: "Johnston", "Avenir", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	padding: 15px 0;
+	text-align: center;
+	background-color: #76b758;
+	text-decoration: none;
+	width: 48%;
+}
+
+a.buttonnav:hover {
+	background-color: #4b768a;
+}
+
+.buttonnav.l {
+	border-radius: 50px;
+}
+
+.buttonnav.r {
+	border-radius: 50px;
+}
+
+.content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+.stuff {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.maxw {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.carousel-inner {
+	
+}
+
+.showhero {
+	max-width: 1200px;
+	margin: 50px auto;
+}
+
+.adder:before {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1));
+	height: 500px;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.left {
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.right {
+	width: 100%;
+}
+
+.pagenav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+.info {
+	display: block;
+	color: #4c4c4c;
+	width: 100%;
+	padding: 20px 0;
+	border-top: 1px solid #cccccc;
+	text-decoration: none;
+}
+
+a.info {
+	color: #4b768a;
+	text-decoration: none;
+}
+
+a.info.toggle {
+	color: #4c4c4c;
+}
+
+a.collapsed.info.toggle:after {
+	content: '^';
+	color: #4b768a;
+	font-family: "Johnston", "Avenir", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	position: absolute;
+	display: inline-block;
+	transform: rotate(180deg);
+	margin: -10px 0 0 10px;
+}
+
+a.info.toggle:after {
+	content: '^';
+	color: #4b768a;
+	font-family: "Johnston", "Avenir", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	position: absolute;
+	display: inline-block;
+	transform: rotate(0deg);
+	margin: 0 0 0 10px;
+}
+
+.infoholder {
+	padding: 0 0 20px 10px;
+	line-height: 1.4;
+}
+
+.level {
+	font-weight: bold;
+}
+
+.showpagevideo {
+	width: 100%;
+	min-height: 372px;
+}
+
+.right a.collapsed.toggle:after {
+	content: '^';
+	font-family: "Johnston", "Avenir", Helvetica, Arial, sans-serif;
+	font-size: 1.75rem;
+	position: absolute;
+	display: inline-block;
+	transform: rotate(180deg);
+	margin: -10px 0 0 10px;
+}
+
+.right a.toggle:after {
+	content: '^';
+	font-family: "Johnston", "Avenir", Helvetica, Arial, sans-serif;
+	font-size: 1.75rem;
+	position: absolute;
+	display: inline-block;
+	transform: rotate(0deg);
+	margin: 3px 0 0 10px;
+}
+
+.searcharea {
+	background-color: #ffffff;
+	padding: 50px 0;
+	width: 100%;
+}
+
+.infoitems {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.infoitems p {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.event {
+	max-width: 300px;
+	margin: 30px auto;
+	padding: 0 0 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #cccccc;
+}
+
+.event:last-of-type {
+	border-bottom: 0px;
+	padding: 0;
+}
+
+.eventTitle {
+	font-size: 1.5rem;
+}
+
+.eventDate {
+	font-size: .8rem;
+	color: #4b768a;
+	margin-top: 5px;
+}
+
+.eventLink a {
+	color: #ffffff;
+	background-color: #4c4c4c;
+	padding: 10px 50px;
+}
+
+.eventLink a:hover {
+	background-color: #76b758;
+}
+
+.object {
+	color: #ffffff;
+	background-color: #4b768a;
+	margin: 10px 0 0;
+	padding: 10px 20px;
+	border-radius: 50px;
+	display: block;
+	text-align: center;
+}
+
+.object:hover {
+	color: #ffffff;
+	background-color: #76b758;
+}
+
+@media screen and ( min-width:768px ) {
+	.maxw {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	
+	.event {
+		max-width: 700px;
+	}
+
+	.left {
+		width: 100%;
+	}
+
+	.right {
+		width: 100%;
+	}
+	
+	.infoitems p {
+		width: 45%;
+	}
+
+	}
+
+@media screen and ( min-width:1200px ) {
+	.maxw {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.event {
+		max-width: 1200px;
+	}
+
+	.left {
+		width: 40%;
+		margin-bottom: 0px;
+	}
+
+	.right {
+		width: 55%;
+	}
+	
+}
